@@ -4,7 +4,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap");
 
-* {
-  /* font-family: Quicksand !important; */
+/*      SCROLL BAR */
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 6px;
+    padding: 1px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5a5e6b;
+    border-radius: 10px;
+
 }
 

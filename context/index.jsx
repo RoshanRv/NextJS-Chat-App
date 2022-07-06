@@ -7,11 +7,12 @@ export const ContextProvider = ({children})=>{
     const [username,setUsername]=useState('')
     const [password,setPassword]=useState('')
 
+
     const value = {
         username,
         setUsername,
         password,
-        setPassword
+        setPassword,
     }
 
     return(
