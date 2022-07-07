@@ -7,6 +7,7 @@ import Modal from './Modal'
 import AddContact from './AddContact'
 import Logout from './Logout'
 
+
 const SideBar = () => {
 
     const [showAddContact,setShowAddContact]=useState(false)
