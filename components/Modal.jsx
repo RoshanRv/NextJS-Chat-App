@@ -1,7 +1,5 @@
-import React,{useContext}from 'react'
 import { faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Context } from '../context'
 
 const Modal = ({children,setShowItem,showItem}) => {
 

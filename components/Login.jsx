@@ -2,19 +2,16 @@ import React from 'react'
 import Head from 'next/head'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMessage } from '@fortawesome/free-solid-svg-icons'
-import { faGoogle } from '@fortawesome/free-brands-svg-icons'
+import { faGoogle} from '@fortawesome/free-brands-svg-icons'
 import Button from '../components/Button'
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth'
 import { auth } from '../firebaseconfig'
 
 const Login = () => {
 
-    const [signInWithGoogle, user, loading,error]=useSignInWithGoogle(auth)
-
+    const [signInWithGoogle]=useSignInWithGoogle(auth)
     const handleSubmit = ()=>{
-
         signInWithGoogle()
-        
       }
 
   return (
@@ -37,8 +34,9 @@ const Login = () => {
         </div> */}
 
         <span className='px-8 pt-12 pb-6 bg-dPri rounded-2xl hover:bg-lPri transition-all'><FontAwesomeIcon icon={faMessage} className='text-6xl ' /></span>
-        <div className='mt-20'>
-         <Button onClick={()=>handleSubmit()} >Sign In With Google</Button>
+        <div className='mt-20 '>
+        <h1 className='text-xl ' >Sign In Using</h1>
+         <Button onClick={()=>handleSubmit()} ><FontAwesomeIcon icon={faGoogle} /></Button>
         </div>
         
       </div>
