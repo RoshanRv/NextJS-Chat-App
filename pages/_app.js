@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import {auth} from "../firebaseconfig"
 import Login from '../components/Login';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
 
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }) {
        <title>Chat App | Chats</title>
     </Head>
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }

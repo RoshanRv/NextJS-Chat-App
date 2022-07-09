@@ -6,7 +6,7 @@
 
 /*      SCROLL BAR */
 ::-webkit-scrollbar{
-    background-color: transparent;
+    background-color: rgb(55 65 81);
     width: 6px;
     padding: 1px;
 }
@@ -16,4 +16,23 @@
     border-radius: 10px;
 
 }
+
+/*          FOOTER       */
+ .beat{
+     animation-name: heart;
+     animation-duration: 1000ms;
+     animation-iteration-count: infinite;
+ }
+    
+ @keyframes heart{
+     0%{
+         transform: scale(1);
+     }
+    
+     90%{
+         transform: scale(0.7);
+     }
+    
+        
+ }
 
