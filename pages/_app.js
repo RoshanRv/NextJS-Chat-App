@@ -19,7 +19,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
-       <link rel="shortcut icon" href="../public/favicon.ico" />
        <title>Chat App | Chats</title>
     </Head>
       <Component {...pageProps} />
