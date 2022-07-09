@@ -1,12 +1,13 @@
 import '../styles/globals.css'
-import { ContextProvider } from '../context'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import {auth} from "../firebaseconfig"
 import Login from '../components/Login';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
 
   const [user, loading, error] = useAuthState(auth);
+  
 
   if(!user){
 
@@ -16,9 +17,13 @@ function MyApp({ Component, pageProps }) {
   }
 
   return (
-    <ContextProvider>
+    <>
+    <Head>
+       <link rel="shortcut icon" href="../public/favicon.ico" />
+       <title>Chat App | Chats</title>
+    </Head>
       <Component {...pageProps} />
-    </ContextProvider>
+    </>
   )
 }
 
