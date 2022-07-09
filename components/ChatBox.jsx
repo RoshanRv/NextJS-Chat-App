@@ -42,12 +42,7 @@ const ChatBox = () => {
 
     useEffect(()=>{
         textInputRef.current.focus()
-
-        window.addEventListener('keydown',(e)=>{
-            
-                textInputRef.current.focus()
-        })
-
+        
     },[])
 
     //      Update Scroll To End of Screen
@@ -59,7 +54,7 @@ const ChatBox = () => {
     },[messages])
 
   return (
-    <section className='bg-gray-700 relative flex flex-col rounded-lg h-full shadow-xl justify-between shadow-gray-800 w-full text-left text-lg text-white '>
+    <section  className='bg-gray-700 relative flex flex-col rounded-lg h-full shadow-xl justify-between shadow-gray-800 w-full text-left text-lg text-white '>
         {/*   Name */}
         <div className="flex gap-x-6 items-center border-b-2 border-dPri pb-4 bg-mSec rounded-t-lg p-4">
             {/*         back btn */}
